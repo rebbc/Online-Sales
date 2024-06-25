@@ -31,10 +31,19 @@ if 'Total Revenue' not in df.columns:
 
 df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
 
+# Mantenimiento de las columnas numéricas a tipo de dato correspondiente (float o integer).
+
+df['Units Sold'] = pd.to_numeric(df['Units Sold'], downcast='integer')
+
+df['Unit Price'] = pd.to_numeric(df['Unit Price'], downcast='float')
+
+df['Total Revenue'] = pd.to_numeric(df['Total Revenue'], downcast='float')
 
 # Carga de los datos en PostgreSQL
 
 table_name = 'OnlineSales'  
 df.to_sql(table_name, engine, if_exists='replace', index=False)
+
+# Este mensaje nos indica que el proceso se realizó con éxito.
 
 print("Datos guardados en la base de datos.")
