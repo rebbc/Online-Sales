@@ -10,7 +10,7 @@ df = pd.read_csv('Online Sales Data.csv')
 # Configuración de la conexión
 
 usuario = 'postgres'
-contraseña = 'pola'
+contraseña = '***'
 host = 'localhost'
 puerto = '5432'
 nombre_base_datos = 'OnlineSales'
