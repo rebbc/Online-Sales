@@ -48,24 +48,24 @@ Además, se observa que en la región de Asia, los clientes muestran una prefere
 <br>
 En resumen, el análisis inicial revela tanto áreas de éxito como oportunidades de mejora. 
 <br><br>
-<img src = 'img/Visualizacion 1.png' height = '600'>
+<img src = 'img/Visualizacion 1.png' height = '500'>
 <br><br>
 
 - Filtro por Región: En este caso, aplicamos el filtro por región.
 <br>
-<img src = 'img/Visualizacion 2.png' height = '600'>
+<img src = 'img/Visualizacion 2.png' height = '500'>
 <br><br>
 
 - Filtros por Región y Trimestre: Aplicamos ambos filtros, por región y por trimestre.
 <br>
-<img src = 'img/Visualizacion 3.png' height = '600'>
+<img src = 'img/Visualizacion 3.png' height = '500'>
 <br><br><br>
 Esta visualización nos permite conocer tendencias de ventas, saber cómo operan nuestros clientes y cuales son sus categorías de preferencia. 
 
 # Consultas SQL
 
-<img src = 'img/primer consulta .png' height = '600'>
+<img src = 'img/Primer consulta .png' height = '500'>
 <br><br>
-<img src = 'img/segunda consulta.png' height = '600'>
+<img src = 'img/Segunda consulta.png' height = '500'>
 <br><br>
 Para optimizar la consulta proporcionada, eliminé la línea 'WHERE "Total Revenue" IS NOT NULL"', ya que considero que si se encuentra un dato nulo, no lo podría sumar. Es una línea redundante y no es necesaria para la consulta. 
